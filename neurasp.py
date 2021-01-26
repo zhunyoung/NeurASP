@@ -463,7 +463,7 @@ class NeurASP(object):
         for dataIdx, data in enumerate(dataList):
             # data is a dictionary. we need to edit its key if the key contains a defined const c
             # where c is defined in rule #const c=v.
-            for key in data:
+            for key in list(data.keys):
                 data[self.constReplacement(key)] = data.pop(key)
 
             # Step 1: get the output of each neural network
