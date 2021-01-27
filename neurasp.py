@@ -12,7 +12,7 @@ from mvpp import MVPP
 
 
 class NeurASP(object):
-    def __init__(self, dprogram, nnMapping, optimizers, gpu=True):
+    def __init__(self, dprogram, nnMapping, optimizers, gpu=False):
 
         """
         @param dprogram: a string for a NeurASP program
